@@ -1,0 +1,112 @@
+/*container*/
+
+.conTop {
+    overflow: hidden;
+    background-color: white;
+}
+
+.conTop > .center {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+section > a > div {
+    float: left;
+}
+
+.topBox1 .linetop {
+    background-image: url(../images/main/con_line01.png);
+}
+
+.topBox2 .linetop {
+    background-image: url(../images/main/con_line02.png);
+}
+
+.topBox3 .linebot {
+    background-image: url(../images/main/con_line03.png);
+}
+
+.topBox4 .linebot {
+    background-image: url(../images/main/con_line04.png);
+}
+
+.conTop .linetop {
+    position: relative;
+    width: 310px;
+    height: 280px;
+    margin-left: -10px;
+}
+
+.conTop .topBox1 {
+    position: relative;
+}
+
+.conTop .linetop:after {
+    content: "";
+    border-top: 30px solid white;
+    border-left: 30px solid white;
+    border-right: 30px solid white;
+    border-bottom: 30px solid white;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.conTop .linebot {
+    position: relative;
+    width: 310px;
+    height: 280px;
+    margin-right: -10px;
+}
+
+.conTop .linebot:after {
+    content: "";
+    border-top: 30px solid white;
+    border-left: 30px solid white;
+    border-right: 30px solid white;
+    border-bottom: 30px solid white;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.conTop h3 {
+    font-size: 18px;
+    padding: 57px 0 16px 55px;
+}
+
+.conTop span {
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 55px;
+}
+
+.conTop p {
+    padding-top: 48px;
+    padding-left: 55px;
+    font-size: 16px;
+    color: #636363;
+    line-height: 28px;
+}
+
+.topBox1 h3,
+.topBox1 span {
+    color: #00acb2;
+}
+
+.topBox2 h3,
+.topBox2 span {
+    color: #b24600;
+}
+
+.topBox3 h3,
+.topBox3 span {
+    color: #f37321;
+}
+
+.topBox4 h3,
+.topBox4 span {
+    color: #8a8a8a;
+}

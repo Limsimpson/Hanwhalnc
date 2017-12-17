@@ -1,0 +1,30 @@
+@import url(common.css);
+@import url(header.css);
+@import url(visual.css);
+@import url(container_top.css);
+@import url(container_bot.css);
+@import url(footer.css);
+
+/*공통사항*/
+
+body {
+    font-family: "나눔고딕", Nanum-Gothic, sans-serif;
+    background-color: lightseagreen;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*center값에 너비를 줘야 maring 0 auto가 적용된다.*/
+
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+#container {
+    background-color: lightskyblue;
+}
