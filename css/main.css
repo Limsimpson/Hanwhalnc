@@ -1,30 +1,231 @@
-@import url(common.css);
-@import url(header.css);
-@import url(visual.css);
-@import url(container_top.css);
-@import url(container_bot.css);
-@import url(footer.css);
+@charset "UTF-8";
 
-/*공통사항*/
+/*VISUAL*/
 
-body {
-    font-family: "나눔고딕", Nanum-Gothic, sans-serif;
-    background-color: lightseagreen;
-    font-size: 14px;
-}
+#visual{position: relative; height: 580px;}
 
-a:hover {
-    text-decoration: none;
-}
+/*background-size를 cover로 할 경우 옆에 잘림을 방지할 수 있다.*/
 
-/*center값에 너비를 줘야 maring 0 auto가 적용된다.*/
+#visual>.ban{position: absolute; width: 100%; height: 580px; background: no-repeat center top; background-size: cover; opacity: 0; transition: 1s;}
 
-.center {
-    width: 1200px;
-    margin: 0 auto;
-}
+#visual>.banner1{opacity: 1; background-image: url(../images/main/bg_main01.jpg);}
 
+#visual>.banner2{background-image: url(../images/main/bg_main02.jpg);}
 
-#container {
-    background-color: lightskyblue;
-}
+#visual>.banner3{background-image: url(../images/main/bg_main03.jpg);}
+
+#visual>.banner4{background-image: url(../images/main/bg_main04.jpg);}
+
+#visual>.ban span{color: #f37321; font-size:32px;}
+
+#visual>.ban p{color:white; font-size:25px; font-weight: 500; text-shadow: 2px 2px rgba(0,0,0,0.4);}
+
+#visual>.banner2 p{margin-top: 302px; margin-left: 483px;}
+
+#visual>.banner3 p{margin-top: 302px; margin-left: 483px;}
+
+#visual>.banner4 p{margin-top: 302px; margin-left: 483px;}
+
+#visual input{position: absolute; z-index: 1000; display: none;}
+
+#visual label{position: absolute; z-index: 1000; text-indent: -9999px;}
+
+#visual .btn{bottom: 10px; left: 50%; width: 10px; height: 10px; border: 1px solid #8a8a8a;}
+
+#visual .rBtn1{margin-left: -40px;}
+
+#visual .rBtn2{margin-left: -20px;}
+
+#visual .rBtn4{margin-left: 20px;}
+
+#ban1:checked ~ .rBtn1,
+#ban2:checked ~ .rBtn2,
+#ban3:checked ~ .rBtn3,
+#ban4:checked ~ .rBtn4{background: #f37321;}
+
+#ban1:checked ~ .banner1,
+#ban2:checked ~ .banner2,
+#ban3:checked ~ .banner3,
+#ban4:checked ~ .banner4{opacity: 1;}
+
+/* VISUAL END */
+
+/*----------------------------------------------------------------------------*/
+
+/* CONTAINER TOP */
+
+.conTop>.center{margin: 50px auto;}
+
+.conTop .topBox{position: relative; width: 600px; float: left;}
+
+.topBox>a{display: block;}
+
+.topBox1>a>div,
+.topBox2>a>div{position: relative; float:left;}
+
+.topBox3>a>div,
+.topBox4>a>div{position: relative; float: right;}
+
+/*linetop은 right 0, linebot는 left 0*/
+
+.conTop .linetop{position: absolute; top: 0; right: 0; width: 310px; height: 280px; z-index: 1000;}
+
+.conTop .linebot{position: absolute; top: 0; left: 0; width: 310px; height: 280px; z-index: 1000;}
+
+.topBox>a>.img>img{opacity:0; transition:1s;}
+
+.topBox1 .linetop{background-image: url(../images/main/con_line01.png);}
+
+.topBox2 .linetop{background-image: url(../images/main/con_line02.png);}
+
+.topBox3 .linebot{background-image: url(../images/main/con_line03.png);}
+
+.topBox4 .linebot{background-image: url(../images/main/con_line04.png);}
+
+.topBox1>a>.img{background-image: url(../images/main/con_01.jpg);}
+
+.topBox1>a:hover>.img>img{opacity:1;}
+
+.topBox2>a>.img{background-image: url(../images/main/con_02.jpg);}
+
+.topBox2>a:hover>.img>img{opacity:1;}
+
+.topBox3>a>.img{background-image: url(../images/main/con_03.jpg);}
+
+.topBox3>a:hover>.img>img{opacity:1;}
+
+.topBox4>a>.img{background-image: url(../images/main/con_04.jpg);}
+
+.topBox4>a:hover>.img>img{opacity:1;}
+
+.conTop .topBox1:after,
+.conTop .topBox2:after{content: ""; position: absolute; bottom: 41px; right: 300px; border-style: solid; border-width: 22px 21px 22px 0; border-color: transparent; border-right-color: #fff;}
+
+.conTop .topBox3:after,
+.conTop .topBox4:after{content: ""; position: absolute; top: 41px; left: 300px; border-style: solid; border-width: 22px 0 22px 21px; border-color: transparent; border-left-color: #fff;}
+
+/*글자*/
+
+.conTop h3{font-size: 18px; padding: 57px 0 16px 55px;}
+
+.conTop span{font-size: 22px; font-weight: 500; padding-left: 55px;}
+
+.conTop p{padding-top: 48px; padding-left: 55px; font-size: 16px; color: #636363; line-height: 28px;}
+
+.topBox1 h3, .topBox1 span{color: #00acb2;}
+
+.topBox2 h3, .topBox2 span{color: #b24600;}
+
+.topBox3 h3, .topBox3 span{color: #f37321;}
+
+.topBox4 h3, .topBox4 span{color: #8a8a8a;}
+
+/* CONTAINER TOP END */
+
+/*----------------------------------------------------------------------------*/
+
+/* CONTAINER BOTTOM */
+
+.conBot{padding-top: 50px; padding-bottom: 50px; margin-bottom: 50px;
+    background: rgba(251, 181, 132, 0.2); /*나중에 투명도만 0.2로 낮춰주기*/}
+
+.conBot section{float: left;}
+
+.conBot .botBox2 h3,
+.conBot .botBox3 h3{font-size: 25px; color: white; font-weight: 500;
+    padding-top: 41px; padding-bottom: 28px;}
+
+.conBot .botBox2 a,
+.conBot .botBox3 a{display: block; text-align: center; color: white;
+    border: 1px solid white; width: 160px; height: 39px; line-height: 39px;
+    margin-top: 30px; margin-left: 55px; transition:0.2s;}
+
+.conBot .botBox2 a:hover{color: #01797d; border: 1px solid #01797d;}
+
+.conBot .botBox3 a:hover{color: #6c2b00; border: 1px solid #6c2b00;}
+
+.conBot .botBox2,
+.conBot .botBox3{width: 270px; height: 280px; text-align: center; color: white;}
+
+.conBot .botBox2{background: #00acb2; margin-left: 20px; margin-right: 20px;
+    line-height: 22px;}
+
+.conBot .botBox3{background: #b24600; margin-right: 0; line-height: 27px;}
+
+.botBox4 div{float: left;}
+
+.botBox4{position: relative; width: 618px; height: 278px; background: white;
+    border: 1px solid #e8ded7; margin-top: 20px;}
+
+.botBox4 .news h3{font-size: 23px; color: #8a8a8a; font-weight: 500;
+    padding-top: 30px; padding-left: 32px; padding-bottom: 9px;}
+
+.botBox4 .news span{display: block; font-size: 15px; color: #8a8a8a;
+    font-weight: 500; padding-left: 32px;}
+
+.botBox4 .news div{width: 51px; height: 51px; margin-top: 52px; margin-left: 32px; background-image: url(../images/main/ico_news.png);}
+
+.botBox4 ul{margin-left: 110px; border-right: 1px dashed #8a8a8a;}
+
+.botBox4 li{width: 200px; height: 23px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-top: 7px; margin-right: 15px;}
+
+.botBox4 li a{font-size: 14px; color: #8a8a8a; transition:0.2s;}
+
+.botBox4 li a:hover{color: #fca060; text-decoration: underline;}
+
+.botBox4 .onshop h3{font-size: 23px; color: #8a8a8a; font-weight: 500;
+    padding-top: 30px; padding-left: 22px; padding-bottom: 9px;}
+
+.botBox4 .onshop span{display: block; font-size: 15px; color: #8a8a8a;
+    font-weight: 500; padding-left: 22px;}
+
+.botBox4 .onshop div{width: 51px; height: 51px; margin-top: 52px;
+    margin-left: 22px; background-image: url(../images/main/ico_cart.png);}
+
+.botBox4>.onshop .text{margin-left: 95px; margin-top: 47px; font-size: 14px; color: #8a8a8a; text-align: center; line-height: 25px; transition:0.2s;}
+
+.botBox4>.onshop .text:hover{color: #fca060; text-decoration: underline;}
+
+.botBox4 .more{position: absolute; top: 44px; width: 15px; height: 15px;
+    text-indent: -9999px; background-image: url(../images/main/ico_more.png);}
+
+.botBox4 .news .more{left: 295px;}
+
+.botBox4 .onshop .more{right: 20px;}
+
+.botBox4 .more:hover{background-image: url(../images/main/ico_more.png);
+    background-position: -24px 0;}
+
+.conBot .botBox5,
+.conBot .botBox6{width: 270px; height: 280px; margin-top: 20px;}
+
+.botBox5 h3,
+.botBox6 h3{font-size: 23px; color: white; font-weight: 500; padding-top: 30px; padding-left: 32px; padding-bottom: 9px;}
+
+.botBox5 span,
+.botBox6 span{display: block; font-size: 15px; color: white; font-weight: 500; padding-left: 32px;}
+
+.botBox5{background-image: url(../images/main/con_agency.jpg); margin-left: 20px; margin-right: 20px;}
+
+.botBox5 ul{padding-top: 48px; padding-left: 32px;}
+
+.botBox5 li{padding-top: 3px; padding-bottom: 25px;
+    background: url(../images/main/ico_next_agency.png) no-repeat 65% 0;}
+
+.botBox5 li>a{color: white; padding-right: 25px;}
+
+.botBox5 li>a:hover{text-decoration:underline;}
+
+.botBox6{background-image: url(../images/main/con_gallery.jpg); margin-right: 0;}
+
+.botBox6 .gallery1{color: white; padding-left: 32px; padding-top: 21px;
+    padding-bottom: 4px; background: url(../images/main/ico_next_gallery.png) no-repeat 60% 100%;}
+
+.botBox6 .gallery2{color: white; padding-left: 32px; padding-top: 20px;
+    line-height: 25px;}
+
+.botBox6 p:hover{text-decoration:underline;}
+
+/* CONTAINER BOTTOM END */
+
+/*----------------------------------------------------------------------------*/

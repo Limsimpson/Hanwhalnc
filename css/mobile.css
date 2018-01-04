@@ -1,0 +1,52 @@
+/* 태블릿 */
+
+@media all and (min-width:768px) and (max-width:1023px) {}
+
+/* 모바일 */
+
+@media all and (max-width:767px) {
+
+/* 100% 만들기 */
+header{width:100%;}
+.center{width:100%;}
+
+/* display none 시키기 */
+header .topmenu, #gnb{display:none;}
+
+/* header */
+
+header .logo{margin:7px; padding:0;}
+header .logo img{width:40vw;}
+
+/* nav */
+.mIcon{display:block; position:absolute; top:1%; right:0;}
+
+/* banner */
+#visual{width:100%; height:40vw;}
+#visual>.ban{height:40vw;}
+#visual>.ban>div>p,
+#visual>.ban>div span{margin:20% 0; font-size:3vw; text-align: center; text-shadow: 1px 1px rgba(0,0,0,0.4);}
+#visual .btn{bottom:0;}
+
+/* container */
+
+/* container top */
+
+.conTop>.center{margin:5% auto;}
+.conTop .topBox{width:50%;}
+.topBox>a>.img{width:100%; background-repeat:no-repeat; background-position:center; background-size:cover;}
+.topBox>a>.img>img{height:50vw;}
+.conTop .topBox .linetop,.conTop .topBox .linebot,
+.conTop .topBox:after{display:none;}
+
+/*container bottom*/
+.conBot{margin:5% auto; padding:0; background-color:#fff;}
+.botBox1 img{width:100%;}
+.conBot .botBox2, .conBot .botBox3{width:50%; height:20vw; margin:5% auto;}
+.conBot .botBox2>p, .conBot .botBox3>p{display:none;}
+.conBot .botBox2>h3, .conBot .botBox3>h3{font-size:4vw; padding:0; line-height:2.1em;}
+.conBot .botBox2>a, .conBot .botBox3>a{margin:0 auto;}
+
+
+.conBot .botBox4, .conBot .botBox5, .conBot .botBox6{margin:0;width:100%; height:100%;}
+.botBox4 ul{border-right:none;}
