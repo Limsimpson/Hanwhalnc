@@ -7,25 +7,28 @@
 @media all and (max-width:767px) {
 
 /* 100% 만들기 */
-header{width:100%;}
-.center{width:100%;}
+header, .center{width:100%;}
 
 /* display none 시키기 */
 header .topmenu, #gnb{display:none;}
 
 /* header */
 
-header .logo{margin:7px; padding:0;}
-header .logo img{width:40vw;}
+header .logo, .footLogo{margin:7px;}
+
+header .logo img, .footLogo{width:40vw;}
 
 /* nav */
-.mIcon{display:block; position:absolute; top:1%; right:0;}
+.mIcon{display:block; position:absolute; top:20%; right:0;}
 
 /* banner */
 #visual{width:100%; height:40vw;}
+
 #visual>.ban{height:40vw;}
+
 #visual>.ban>div>p,
 #visual>.ban>div span{margin:20% 0; font-size:3vw; text-align: center; text-shadow: 1px 1px rgba(0,0,0,0.4);}
+
 #visual .btn{bottom:0;}
 
 /* container */
@@ -33,20 +36,55 @@ header .logo img{width:40vw;}
 /* container top */
 
 .conTop>.center{margin:5% auto;}
+
 .conTop .topBox{width:50%;}
+
 .topBox>a>.img{width:100%; background-repeat:no-repeat; background-position:center; background-size:cover;}
+
 .topBox>a>.img>img{height:50vw;}
+
 .conTop .topBox .linetop,.conTop .topBox .linebot,
 .conTop .topBox:after{display:none;}
 
-/*container bottom*/
+/* container bottom */
 .conBot{margin:5% auto; padding:0; background-color:#fff;}
+
 .botBox1 img{width:100%;}
+
 .conBot .botBox2, .conBot .botBox3{width:50%; height:20vw; margin:5% auto;}
+
 .conBot .botBox2>p, .conBot .botBox3>p{display:none;}
+
 .conBot .botBox2>h3, .conBot .botBox3>h3{font-size:4vw; padding:0; line-height:2.1em;}
+
 .conBot .botBox2>a, .conBot .botBox3>a{margin:0 auto;}
 
+.conBot .botBox4, .conBot .botBox5, .conBot .botBox6{margin:2.5% 0;width:100%; height:100%;}
 
-.conBot .botBox4, .conBot .botBox5, .conBot .botBox6{margin:0;width:100%; height:100%;}
+.conBot .botBox4{margin-top:0%;}
+
 .botBox4 ul{border-right:none;}
+
+.botBox4>.news{border-bottom:1px dashed #ccc; padding:0px 10px 25px;}
+
+.botBox4>.onshop{position:relative; padding:0px 10px 25px; width:95%;}
+
+.botBox4 .onshop .more{top: 44px; left: 295px;}
+
+.conBot .botBox5, .conBot .botBox6{background-repeat:no-repeat; background-size:100%; background-position:80% 50%;}
+
+.botBox5 ul{padding-top:20px;}
+
+.botBox5 li{background-position: 45% 0%;}
+
+.botBox6 .gallery1{background-position:45% 100%; margin:30px 0 67px;}
+
+.botBox6 .gallery2{display:none;}
+
+
+/* footer */
+.footmenu{margin-top:25%;}
+
+small{line-height: 1.5;}
+
+form{top:22%; right:0;}
