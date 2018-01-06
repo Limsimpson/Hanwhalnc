@@ -196,6 +196,8 @@
 .botBox4 .more:hover{background-image: url(../images/main/ico_more.png);
     background-position: -24px 0;}
 
+.botBox5 .mMore, .botBox6 .mMore{display:none;}
+
 .conBot .botBox5,
 .conBot .botBox6{width: 270px; height: 280px; margin-top: 20px;}
 

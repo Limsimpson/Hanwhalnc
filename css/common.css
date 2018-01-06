@@ -48,7 +48,7 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,nav,menu,sec
 
 /* 한화 LnC 전체 공통사항 */
 
-body{font-family: "나눔고딕", Nanum-Gothic, sans-serif; font-size: 14px;}
+body{font-family: "나눔고딕", "Nanum-Gothic", sans-serif; font-size: 14px;}
 
 a:hover{text-decoration: none;}
 
@@ -83,11 +83,11 @@ a:hover{text-decoration: none;}
 /* HEADER */
 header{position:relative;}
 
-header .logo{float: left; margin: 30px 123px 14px 46px;}
+header>.logo{float:left; margin: 30px 123px 14px 46px;}
 
 /* TOP MENU -------------------- */
 
-header .topmenu{position:absolute; top: 10px; right: 35px;}
+header>.topmenu{position:absolute; top: 10px; right: 35px;}
 
 .topmenu>li{float: left;}
 
@@ -96,7 +96,7 @@ background: url(../images/main/bar_top.png) no-repeat 0 50%;}
 
 .topmenu>li>a:hover{color:#f37321;}
 
-.topmenu .kor{background: none;}
+.topmenu>.kor{background: none;}
 
 /* MAIN MENU -------------------- */
 
