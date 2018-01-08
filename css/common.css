@@ -96,13 +96,13 @@ background: url(../images/main/bar_top.png) no-repeat 0 50%;}
 
 .topmenu>li>a:hover{color:#f37321;}
 
-.topmenu>.kor{background: none;}
+.topmenu .kor{background: none;}
 
 /* MAIN MENU -------------------- */
 
 nav{float:left; margin-top: 47px;}
 
-#gnb>li{float: left; position: relative; padding-right: 78px; padding-bottom: 32px;}
+#gnb>li{float: left; position: relative; padding-right: 77px; padding-bottom: 32px;}
 
 #gnb>.g6{padding-right: 30px;}
 
@@ -148,7 +148,7 @@ nav:hover .subBg{display: block;}
 
 footer{border-top: 1px solid #8a8a8a;}
 
-footer .center{position: relative; padding: 23px 0;}
+footer>.center{position: relative; padding: 23px 0;}
 
 .footLogo {float: left; margin: 30px 45px 30px 46px;}
 
@@ -165,23 +165,23 @@ footer .center{position: relative; padding: 23px 0;}
 
 small{line-height: 5.5; font-size: 12px; color: #8a8a8a;}
 
-form{position: absolute; top: 23px; right: 10px;}
-
-#site{width: 150px; height: 25px; border: 1px solid #636363;}
-
-#site>option{color: #636363;}
-
 /* FOOTER END*/
 
 /*-----------------------------------------------------------------------------*/
 
 /* FAMILY SITE */
 
-select{float: right; height:25px !important;
+form{position: absolute; top: 23px; right: 10px;}
+
+#site{width: 150px; height: 25px; border: 1px solid #636363;}
+
+#site>option{color: #636363;}
+
+#site{!important;
 /*   높이값 주기위해  1. i!mportant! :common안에 있는 우선순위의 높이값때문에 높이 적용되지 않아 준 속성 or 2.셀렉트에 아이디부여   */
-width: 150px; border: 1px solid #8a8a8a; font-size: 12px;
+width: 150px; height: 25px; border: 1px solid #636363; font-size: 12px;
 -webkit-appearance: none; -moz-appearance: none; appearance: none;
 background: url(../images/main/ico_arrow.png)no-repeat 95% 50%; padding-left:30px;}
 
 /**/
-.mIcon{display:none;}
+#mGnb, .mIcon{display:none;}

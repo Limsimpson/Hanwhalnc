@@ -165,9 +165,9 @@
 
 .botBox4 .news div{width: 51px; height: 51px; margin-top: 52px; margin-left: 32px; background-image: url(../images/main/ico_news.png);}
 
-.botBox4 ul{margin-left: 110px; border-right: 1px dashed #8a8a8a;}
+.botBox4 ul{width:200px; margin-left: 110px; border-right: 1px dashed #8a8a8a;}
 
-.botBox4 li{width: 200px; height: 23px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-top: 7px; margin-right: 15px;}
+.botBox4 li{height: 23px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-top: 7px; margin-right: 15px;}
 
 .botBox4 li a{font-size: 14px; color: #8a8a8a; transition:0.2s;}
 
@@ -189,9 +189,9 @@
 .botBox4 .more{position: absolute; top: 44px; width: 15px; height: 15px;
     text-indent: -9999px; background-image: url(../images/main/ico_more.png);}
 
-.botBox4 .news .more{left: 295px;}
+.botBox4 .news .more{left: 285px;}
 
-.botBox4 .onshop .more{right: 20px;}
+.botBox4 .onshop .more{right: 30px;}
 
 .botBox4 .more:hover{background-image: url(../images/main/ico_more.png);
     background-position: -24px 0;}
