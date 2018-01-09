@@ -60,6 +60,8 @@
 
 .topBox>a{display: block;}
 
+.topBox>a>.mobile{display:none;}
+
 .topBox1>a>div,
 .topBox2>a>div{position: relative; float:left;}
 
@@ -126,8 +128,9 @@
 
 /* CONTAINER BOTTOM */
 
-.conBot{padding-top: 50px; padding-bottom: 50px; margin-bottom: 50px;
-    background: rgba(251, 181, 132, 0.2); /*나중에 투명도만 0.2로 낮춰주기*/}
+.conBot{background: #fef4ed;}
+
+.conBot>.center{padding-top: 50px; padding-bottom: 50px; margin-bottom: 50px;}
 
 .conBot section{float: left;}
 

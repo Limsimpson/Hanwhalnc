@@ -177,11 +177,12 @@ form{position: absolute; top: 23px; right: 10px;}
 
 #site>option{color: #636363;}
 
-#site{!important;
-/*   높이값 주기위해  1. i!mportant! :common안에 있는 우선순위의 높이값때문에 높이 적용되지 않아 준 속성 or 2.셀렉트에 아이디부여   */
-width: 150px; height: 25px; border: 1px solid #636363; font-size: 12px;
+/* 높이값 주기위해  
+1. i!mportant! :common안에 있는 우선순위의 높이값때문에 높이 적용되지 않아 준 속성 or 
+2.셀렉트에 아이디부여 */
+#site{!important; width: 150px; height: 25px; border: 1px solid #636363; font-size: 12px;
 -webkit-appearance: none; -moz-appearance: none; appearance: none;
 background: url(../images/main/ico_arrow.png)no-repeat 95% 50%; padding-left:30px;}
 
-/**/
+/*mobile*/
 #mGnb, .mIcon{display:none;}
