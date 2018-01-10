@@ -1,31 +1,58 @@
 /* 태블릿 */
 
-@media all and (min-width:768px) and (max-width:1023px) {
+@media all and (min-width:768px) and (max-width:1024px) {
+
+.conBot section{background-color:green;}
+
+/* header */
 
 header, .center{width:100%;}
 
-#visual, #visual>.ban{height:40vw;}
-
-#visual>.ban>div>p,
-#visual>.ban>div span{margin:20% 0; font-size:3vw; text-align: center; text-shadow: 1px 1px rgba(0,0,0,0.4);}
+/* nav */
 
 nav{display:none;}
 
 .mIcon{display:block; position:absolute; top:40%; right:5%;}
 
-.conTop>.center{margin:5% auto;}
+/* visual */
 
-.conTop .topBox{margin:5% auto; float:none;}
+#visual, #visual>.ban{height:40vw;}
 
-.topBox2{order:3;} .topBox3{order:2;}
+#visual>.ban>div>p, #visual>.ban>div span{margin:20% 0; font-size:3vw; text-align: center; text-shadow: 1px 1px rgba(0,0,0,0.4);}
 
-.conBot>.center{padding-top:5%; padding-bottom:5%; margin:0;}
+/* container top */
 
-.conBot .botBox1{width:90%; justify-content: center; padding-left:5%;}
+.conTop>.center{margin:2.5% auto; display:flex; flex-wrap: wrap;}
+
+.conTop .topBox{margin:2.5% auto; float:none;}
+
+.topBox1, .topBox2{justify-content: flex-start;}
+
+.topBox3, .topBox4{justify-content: flex-end;}
+
+.topBox1{order:1;} .topBox2{order:3;} .topBox3{order:2;} .topBox4{order:4;}
+
+/* container bottom */
+
+.conBot>.center{padding:5% auto; display:flex; flex-wrap:wrap;}
+
+.conBot section{float:none; justify-content:center;}
+
+.conBot .botBox1{width:70%;}
 
 .conBot .botBox1 img{width:100%;}
 
-.conBot .botBox2, .conBot .botBox3{margin:3% 3% 3% 10%;}
+/* footer */
+
+footer>.center{padding:2% 0 7%;}
+
+.footLogo{margin:0;}
+
+.footmenu{padding-left:3%; padding-top:1.5%;}
+
+small{position:absolute; bottom:0; left:2%;}
+
+form{top:20%;}
 
 }
 
