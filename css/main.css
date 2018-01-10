@@ -130,106 +130,100 @@
 
 .conBot{background: #fef4ed;}
 
-.conBot>.center{padding-top: 50px; padding-bottom: 50px; margin-bottom: 50px;}
+.conBot>.center{padding-top: 50px; padding-bottom: 50px; margin:0 auto; margin-bottom: 50px;}
 
-.conBot section{float: left;}
+.conBot .botBox{float: left;}
 
-.conBot .botBox2 h3,
-.conBot .botBox3 h3{font-size: 25px; color: white; font-weight: 500;
+.conBot .botBox2>div{float:left; width: 270px; height: 280px; text-align: center; color: white;}
+
+.conBot .botBox2>div>h3{font-size: 25px; color: white; font-weight: 500;
     padding-top: 41px; padding-bottom: 28px;}
 
-.conBot .botBox2 a,
-.conBot .botBox3 a{display: block; text-align: center; color: white;
+.conBot .botBox2>div>a{display: block; text-align: center; color: white;
     border: 1px solid white; width: 160px; height: 39px; line-height: 39px;
     margin-top: 30px; margin-left: 55px; transition:0.2s;}
 
-.conBot .botBox2 a:hover{color: #01797d; border: 1px solid #01797d;}
+.conBot .recruit a:hover{color: #01797d; border: 1px solid #01797d;}
 
-.conBot .botBox3 a:hover{color: #6c2b00; border: 1px solid #6c2b00;}
+.conBot .contribution a:hover{color: #6c2b00; border: 1px solid #6c2b00;}
 
-.conBot .botBox2,
-.conBot .botBox3{width: 270px; height: 280px; text-align: center; color: white;}
-
-.conBot .botBox2{background: #00acb2; margin-left: 20px; margin-right: 20px;
+.conBot .recruit{background: #00acb2; margin-left: 20px; margin-right: 20px;
     line-height: 22px;}
 
-.conBot .botBox3{background: #b24600; margin-right: 0; line-height: 27px;}
+.conBot .contribution{background: #b24600; margin-right: 0; line-height: 27px;}
 
-.botBox4 div{float: left;}
+.botBox3 div{float: left;}
 
-.botBox4{position: relative; width: 618px; height: 278px; background: white;
+.botBox3{position: relative; width: 618px; height: 278px; background: white;
     border: 1px solid #e8ded7; margin-top: 20px;}
 
-.botBox4 .news h3{font-size: 23px; color: #8a8a8a; font-weight: 500;
+.botBox3 .news h3{font-size: 23px; color: #8a8a8a; font-weight: 500;
     padding-top: 30px; padding-left: 32px; padding-bottom: 9px;}
 
-.botBox4 .news span{display: block; font-size: 15px; color: #8a8a8a;
+.botBox3 .news span{display: block; font-size: 15px; color: #8a8a8a;
     font-weight: 500; padding-left: 32px;}
 
-.botBox4 .news div{width: 51px; height: 51px; margin-top: 52px; margin-left: 32px; background-image: url(../images/main/ico_news.png);}
+.botBox3 .news div{width: 51px; height: 51px; margin-top: 52px; margin-left: 32px; background-image: url(../images/main/ico_news.png);}
 
-.botBox4 ul{width:200px; margin-left: 110px; border-right: 1px dashed #8a8a8a;}
+.botBox3 ul{width:200px; margin-left: 110px; border-right: 1px dashed #8a8a8a;}
 
-.botBox4 li{height: 23px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-top: 7px; margin-right: 15px;}
+.botBox3 li{height: 23px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-top: 7px; margin-right: 15px;}
 
-.botBox4 li a{font-size: 14px; color: #8a8a8a; transition:0.2s;}
+.botBox3 li a{font-size: 14px; color: #8a8a8a; transition:0.2s;}
 
-.botBox4 li a:hover{color: #fca060; text-decoration: underline;}
+.botBox3 li a:hover{color: #fca060; text-decoration: underline;}
 
-.botBox4 .onshop h3{font-size: 23px; color: #8a8a8a; font-weight: 500;
+.botBox3 .onshop h3{font-size: 23px; color: #8a8a8a; font-weight: 500;
     padding-top: 30px; padding-left: 22px; padding-bottom: 9px;}
 
-.botBox4 .onshop span{display: block; font-size: 15px; color: #8a8a8a;
+.botBox3 .onshop span{display: block; font-size: 15px; color: #8a8a8a;
     font-weight: 500; padding-left: 22px;}
 
-.botBox4 .onshop div{width: 51px; height: 51px; margin-top: 52px;
+.botBox3 .onshop div{width: 51px; height: 51px; margin-top: 52px;
     margin-left: 22px; background-image: url(../images/main/ico_cart.png);}
 
-.botBox4>.onshop .text{margin-left: 95px; margin-top: 47px; font-size: 14px; color: #8a8a8a; text-align: center; line-height: 25px; transition:0.2s;}
+.botBox3>.onshop .text{margin-left: 95px; margin-top: 47px; font-size: 14px; color: #8a8a8a; text-align: center; line-height: 25px; transition:0.2s;}
 
-.botBox4>.onshop .text:hover{color: #fca060; text-decoration: underline;}
+.botBox3>.onshop .text:hover{color: #fca060; text-decoration: underline;}
 
-.botBox4 .more{position: absolute; top: 44px; width: 15px; height: 15px;
+.botBox3 .more{position: absolute; top: 44px; width: 15px; height: 15px;
     text-indent: -9999px; background-image: url(../images/main/ico_more.png);}
 
-.botBox4 .news .more{left: 285px;}
+.botBox3 .news .more{left: 285px;}
 
-.botBox4 .onshop .more{right: 30px;}
+.botBox3 .onshop .more{right: 30px;}
 
-.botBox4 .more:hover{background-image: url(../images/main/ico_more.png);
+.botBox3 .more:hover{background-image: url(../images/main/ico_more.png);
     background-position: -24px 0;}
 
-.botBox5 .mMore, .botBox6 .mMore{display:none;}
+.botBox4>div .mMore{display:none;}
 
-.conBot .botBox5,
-.conBot .botBox6{width: 270px; height: 280px; margin-top: 20px;}
+.conBot .botBox4>div{float:left; width: 270px; height: 280px; margin-top: 20px;}
 
-.botBox5 h3,
-.botBox6 h3{font-size: 23px; color: white; font-weight: 500; padding-top: 30px; padding-left: 32px; padding-bottom: 9px;}
+.botBox4>div>h3{font-size: 23px; color: white; font-weight: 500; padding-top: 30px; padding-left: 32px; padding-bottom: 9px;}
 
-.botBox5 span,
-.botBox6 span{display: block; font-size: 15px; color: white; font-weight: 500; padding-left: 32px;}
+.botBox4>div>span{display: block; font-size: 15px; color: white; font-weight: 500; padding-left: 32px;}
 
-.botBox5{background-image: url(../images/main/con_agency.jpg); margin-left: 20px; margin-right: 20px;}
+.agency{background-image: url(../images/main/con_agency.jpg); margin-left: 20px; margin-right: 20px;}
 
-.botBox5 ul{padding-top: 48px; padding-left: 32px;}
+.agency ul{padding-top: 48px; padding-left: 32px;}
 
-.botBox5 li{padding-top: 3px; padding-bottom: 25px;
+.agency li{padding-top: 3px; padding-bottom: 25px;
     background: url(../images/main/ico_next_agency.png) no-repeat 65% 0;}
 
-.botBox5 li>a{color: white; padding-right: 25px;}
+.agency li>a{color: white; padding-right: 25px;}
 
-.botBox5 li>a:hover{text-decoration:underline;}
+.agency li>a:hover{text-decoration:underline;}
 
-.botBox6{background-image: url(../images/main/con_gallery.jpg); margin-right: 0;}
+.gallery{background-image: url(../images/main/con_gallery.jpg); margin-right: 0;}
 
-.botBox6 .gallery1{color: white; padding-left: 32px; padding-top: 21px;
+.gallery .gallery1{color: white; padding-left: 32px; padding-top: 21px;
     padding-bottom: 4px; background: url(../images/main/ico_next_gallery.png) no-repeat 60% 100%;}
 
-.botBox6 .gallery2{color: white; padding-left: 32px; padding-top: 20px;
+.gallery .gallery2{color: white; padding-left: 32px; padding-top: 20px;
     line-height: 25px;}
 
-.botBox6 p:hover{text-decoration:underline;}
+.gallery p:hover{text-decoration:underline;}
 
 /* CONTAINER BOTTOM END */
 
