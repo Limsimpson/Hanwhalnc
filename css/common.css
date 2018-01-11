@@ -87,12 +87,11 @@ header>.logo{float:left; margin: 30px 123px 14px 46px;}
 
 /* TOP MENU -------------------- */
 
-header>.topmenu{position:absolute; top: 10px; right: 35px;}
+header>.topmenu{position:absolute; top: 10px; right: 39px;}
 
 .topmenu>li{float: left;}
 
-.topmenu>li>a{color: #636363; font-size: 12px; padding-left: 9px; padding-right: 4px;
-background: url(../images/main/bar_top.png) no-repeat 0 50%;}
+.topmenu>li>a{color: #636363; font-size: 12px; padding-left: 9px; padding-right: 4px; background: url(../images/main/bar_top.png) no-repeat 0 50%;}
 
 .topmenu>li>a:hover{color:#f37321;}
 
@@ -104,7 +103,7 @@ nav{float:left; margin-top: 47px;}
 
 #gnb>li{float: left; position: relative; padding-right: 77px; padding-bottom: 32px;}
 
-#gnb>.g6{padding-right: 30px;}
+#gnb>.g6{padding-right: 39px;}
 
 #gnb>li>a{display: block; font-size: 18px; font-weight: 500; color: black;}
 
@@ -115,8 +114,7 @@ nav{float:left; margin-top: 47px;}
 /* sub의 너비를 주기 위해서는 부모인 li에 position relative를 준다.
 너비는 부모의 값을 따라가고 높이는 자식의 값을 따라간다. */
 
-#gnb .sub{display: none; position: absolute; height: 193px; top: 50px; left: 0;
-    width: 100%; padding-top: 22px; z-index: 1000;}
+#gnb .sub{display: none; position: absolute; height: 193px; top: 50px; left: 0; width: 100%; padding-top: 22px; z-index: 1000;}
 
 #gnb:hover .sub,
 #gnb>li:hover .sub:before{display: block; margin-top: -8.5px; margin-bottom: 5.5px;}
