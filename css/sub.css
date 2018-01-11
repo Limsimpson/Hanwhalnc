@@ -59,13 +59,13 @@
 
 #subcon>.subconBot>.box1{text-align: center; background:#fef4ed; border-radius: 25px; border:1px solid #e8ded7;}
 
-#subcon>.subconBot>.box>p{font-size:20px; padding:90px 50px;}
+#subcon>.subconBot>.box>p{font-size:20px; padding:90px 40px;}
 
 #subcon>.subconBot>.box>p>.lead{font-size:35px;}
 
 /*사업비전 타원형 디자인*/
 
-#subcon>.subconBot>.box2{margin-left:45px;}
+#subcon>.subconBot>.box2{margin-left:30px;}
 
 #subcon>.subconBot>.box2>.circle{margin-top:45px; border-radius:50px; border:1px solid #ef9155;}
 
@@ -128,6 +128,8 @@ nav{display:none;}
 /* sub container bottom */
 
 .subconBot{display:flex; flex-direction:column;}
+    
+.subconBot>.box{width:95%;}
 
 .subconBot>.box1{margin:auto; justify-content:center;}
 
@@ -197,6 +199,8 @@ header>.logo img, .footLogo img{width:80%;}
 
 #subgnb>li>a, .subS>li>a{text-align:left; font-size:0.8em;}
 
+#subgnb>.noline>a{border-right:none;}
+
 .subS>li>a{border:none;}
 
 /* sub container top */
@@ -205,28 +209,32 @@ header>.logo img, .footLogo img{width:80%;}
 
 #subcon .title{margin-left:1%; font-size:25px; background-size: 3px 26px;}
 
-#subcon>.subconTop>.title{background-position:0% 20%;}
+#subcon>.subconTop>.title{background-position:0% 19%;}
 
-#subcon .title>span{display:block;}
+#subcon>.subconTop>.title>span{display:block; font-size:0.5em;}
 
-#subcon>.subconTop>.eng{font-size:25px;}
+#subcon>.subconTop>.eng{padding:3% 2%; font-size:25px;}
 
-#subcon>.subconTop>.lead, #subcon>.subconTop>.last{font-size:1.2em;}
+#subcon>.subconTop>.lead, #subcon>.subconTop>.last{padding:3% 2%; font-size:1.2em;}
 
 /* sub container bottom */
 
-.subconBot{display:flex; flex-direction:column;}
+#subcon{padding:10% 0 0;}
 
-.subconBot>.box1{margin:auto; justify-content:center;}
+#subcon>.subconBot{display:flex; flex-direction:column; padding:10% 0 0;}
+    
+.subconBot>.box{width:100%;}
+    
+#subcon>.subconBot>.box1{border-radius:0; border:none;}
 
-#subcon>.subconBot>.box2{margin:0 auto; width:95%;}
+#subcon>.subconBot>.box2{margin:0 auto;}
 
-#subcon>.subconBot>.box2>.circle{float:none; display:flex; flex-wrap:wrap; background-size:5%;}
+#subcon>.subconBot>.box2>.circle{height:100%; float:none; display:flex; flex-wrap:wrap; background-position:50% 10%; background-size:10%; border:none; border-radius:0; background-color:#f7f7f7; margin-top:0; padding:10% 0;}
+    
+#subcon>.subconBot>.box2>.circle>p{float:none; display:flex; flex-direction: column; padding:13% 0 0; width:100%; text-align: center;}
 
-#subcon>.subconBot>.box2>.circle>p{padding:0; margin:2% 0% 2% 12%; font-size:1.3em;}
-
-#subcon>.subconBot>.box2>.circle>span{padding:0; margin:auto; font-size:1.2em;}
-
+#subcon>.subconBot>.box2>.circle>span{padding:0 0 5%; margin:auto; font-size:3vw;}
+    
 /* footer */
 
 .footLogo{float:none; display:flex; flex-wrap: wrap; margin:3% 2%;}
