@@ -57,8 +57,7 @@
 
 #subcon>.subconBot>.box{margin-top:50px; float:left;}
 
-#subcon>.subconBot>.box1{text-align: center; background:#fef4ed;
-border-radius: 25px; border:1px solid #e8ded7;}
+#subcon>.subconBot>.box1{text-align: center; background:#fef4ed; border-radius: 25px; border:1px solid #e8ded7;}
 
 #subcon>.subconBot>.box>p{font-size:20px; padding:90px 50px;}
 
@@ -81,3 +80,161 @@ border-radius: 25px; border:1px solid #e8ded7;}
 #subcon>.subconBot>.box2>.c2{background:url(../images/sub/ico_globalmarket.png) no-repeat 5% 50% #fff;}
 
 #subcon>.subconBot>.box2>.c3{background:url(../images/sub/ico_newbusiness.png) no-repeat 5% 50% #fff;}
+
+/*-----------------------------------------------------------------------------*/
+
+/* 태블릿 */
+
+@media all and (min-width:768px) and (max-width:1024px) {
+
+/* header */
+
+.center{width:100%;}
+
+/* nav */
+
+nav{display:none;}
+
+.mIcon{display:block; position:absolute; top:40%; right:5%;}
+    
+/*#mGnb{display:block; position:fixed; top:0; right:0; z-index:10000; background-color:rgba(78,78,78,0.9); width:50%; height:100vh;}-----------*/
+
+#mGnb>li>a{display:block; color:white; font-size:20px; text-transform:uppercase; line-height:70px; font-weight:500; text-indent:40px;}
+
+#mGnb .sub{position:static; display:none; background-color:rgba(255,255,255,0.2);}
+
+#mGnb .sub>li{padding-left:40px; border-bottom:1px solid #dadada;}
+
+#mGnb .sub>li>a{color:#dadada; font-size:18px; line-height: 60px;}
+
+#mGnb>li:hover .sub{display:block; height:100%;}
+
+/* banner */
+
+.subvisual, .subvisual>img{height:25vw;}
+
+.subvisual>img{width:100%;}
+
+/* sub container top */
+
+#subcon>.subconTop{background:none;}
+
+#subcon .title{margin-left:1%; font-size:25px; background-size: 3px 26px;}
+
+#subcon>.subconTop>.eng{font-size:25px;}
+
+#subcon>.subconTop>.lead, #subcon>.subconTop>.last{font-size:1.2em;}
+
+/* sub container bottom */
+
+.subconBot{display:flex; flex-direction:column;}
+
+.subconBot>.box1{margin:auto; justify-content:center;}
+
+#subcon>.subconBot>.box2{margin:0 auto; width:95%;}
+
+#subcon>.subconBot>.box2>.circle{float:none; display:flex; background-size:5%;}
+
+#subcon>.subconBot>.box2>.circle>p{padding:0; margin:2% 0% 2% 12%; font-size:1.3em;}
+
+#subcon>.subconBot>.box2>.circle>span{padding:0; margin:auto; font-size:1.2em;}
+
+/* footer */
+
+footer>.center{padding:2% 0 7%;}
+
+.footLogo{margin:0% 0% 0% 4%;}
+
+.footmenu{padding-left:3%; padding-top:1.5%;}
+
+small{position:absolute; left:2%; padding-top:3%; line-height: 1.5;}
+
+form{top:20%;} }
+
+/* 모바일 */
+
+@media all and (max-width:767px) {
+
+/* 100% 만들기 */
+.center{width:100%;}
+
+/* display none 시키기 */
+
+.topmenu, nav{display:none;}
+
+/* header */
+
+header>.logo{margin:2%;}
+
+header>.logo img, .footLogo img{width:80%;}
+
+/* nav */
+.mIcon{display:block; position:absolute; top:20%; right:3%;}
+
+/*#mGnb{display:block; position:fixed; top:0; right:0; z-index:10000; background-color:rgba(78,78,78,0.9); width:50%; height:100vh;}----------*/
+
+#mGnb>li>a{display:block; color:white; font-size:18px; text-transform:uppercase; line-height:70px; font-weight:500; text-indent:40px;}
+
+#mGnb .sub{position:static; display:none; background-color:rgba(255,255,255,0.2);}
+
+#mGnb .sub>li{padding-left:40px; border-bottom:1px solid #dadada;}
+
+#mGnb .sub>li>a{color:#dadada; font-size:16px; line-height:50px;}
+
+#mGnb>li:hover .sub{display:block; height:100%;}
+
+/* banner */
+
+.subvisual, .subvisual>img{height:25vw;}
+
+.subvisual>img{width:100%;}
+
+/* subgnb */
+
+#subgnb>li{width:33.3%;}
+
+#subgnb>li>div{width:100%;}
+
+#subgnb>li>a, .subS>li>a{text-align:left; font-size:0.8em;}
+
+.subS>li>a{border:none;}
+
+/* sub container top */
+
+#subcon>.subconTop{background:none;}
+
+#subcon .title{margin-left:1%; font-size:25px; background-size: 3px 26px;}
+
+#subcon>.subconTop>.title{background-position:0% 20%;}
+
+#subcon .title>span{display:block;}
+
+#subcon>.subconTop>.eng{font-size:25px;}
+
+#subcon>.subconTop>.lead, #subcon>.subconTop>.last{font-size:1.2em;}
+
+/* sub container bottom */
+
+.subconBot{display:flex; flex-direction:column;}
+
+.subconBot>.box1{margin:auto; justify-content:center;}
+
+#subcon>.subconBot>.box2{margin:0 auto; width:95%;}
+
+#subcon>.subconBot>.box2>.circle{float:none; display:flex; flex-wrap:wrap; background-size:5%;}
+
+#subcon>.subconBot>.box2>.circle>p{padding:0; margin:2% 0% 2% 12%; font-size:1.3em;}
+
+#subcon>.subconBot>.box2>.circle>span{padding:0; margin:auto; font-size:1.2em;}
+
+/* footer */
+
+.footLogo{float:none; display:flex; flex-wrap: wrap; margin:3% 2%;}
+
+.footText{display:flex; flex-wrap: wrap;}
+
+.footmenu{padding-bottom:2%;}
+
+small{line-height: 1.5;}
+
+form{top:2%; left:2%;} }
