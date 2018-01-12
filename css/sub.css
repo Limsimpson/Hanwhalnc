@@ -91,6 +91,8 @@
 
 .center{width:100%;}
 
+header>.topmenu{right:5%;}
+
 /* nav */
 
 nav{display:none;}
@@ -196,6 +198,8 @@ header>.logo img, .footLogo img{width:80%;}
 #subgnb>li{width:33.3%;}
 
 #subgnb>li>div{width:100%;}
+
+#subgnb>li>div li{width:100%;}
 
 #subgnb>li>a, .subS>li>a{text-align:left; font-size:0.8em;}
 
